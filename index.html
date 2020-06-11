@@ -9,11 +9,123 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+#particle-js{
+  z-index: -1;
+  opacity: 0;
+  background-size: cover;
+  position : absolute ;
+  background-position: 50% 50%;
+  background-repeat: repeat-y;
+  background-image: url("https://w0.pngwave.com/png/69/539/stack-overflow-stack-exchange-programmer-logo-others-png-clip-art.png");
+}
 </style>
-<body class="w3-light-black w3-black">
+<body class="w3-light-black w3-black" >
+  <div id="particles-js"></div>
 <!-- Page Container -->
 <div  class="w3-content w3-margin-top" style="max-width:1400px;">
+  
 
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"> </script>
+  <script>
+    const particlesJSON = {
+    "particles": {
+        "number": {
+            "value": 40,
+            "density": {
+                "enable": true,
+                "value_area": 500
+            }
+        },
+        "color": {
+            "value": "#ff9800"
+        },
+        "shape": {
+            "type": "polygon",
+            "stroke": {
+                "width": 2,
+                "color": "#ffffff"
+            },
+            "polygon": {
+                "nb_sides": 6
+            },
+        },
+        "opacity": {
+            "value": 0.1,
+            "random": true
+        },
+        "size": {
+            "value": 10,
+            "random": true
+        },
+        "line_linked": {
+            "enable": false,
+            "distance": 200,
+            "color": "#ff5722",
+            "opacity": 0.3,
+            "width": 2
+        },
+        "move": {
+            "enable": true,
+            "speed": 5,
+            "direction": "top",
+            "random": true,
+            "straight": true,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 1200
+            }
+        }
+    },
+    "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+            "onhover": {
+                "enable": true,
+                "mode": [
+                    "grab",
+                    "bubble"
+                ]
+            },
+            "onclick": {
+                "enable": true,
+                "mode": "push"
+            },
+            "resize": true
+        },
+        "modes": {
+            "grab": {
+                "distance": 400,
+                "line_linked": {
+                    "opacity": 0.7
+                }
+            },
+            "bubble": {
+                "distance": 600,
+                "size": 12,
+                "duration": 1,
+                "opacity": 0.8,
+                "speed": 2
+            },
+            "repulse": {
+                "distance": 400,
+                "duration": 0.4
+            },
+            "push": {
+                "particles_nb": 20
+            },
+            "remove": {
+                "particles_nb": 10
+            }
+        }
+    },
+    "retina_detect": true
+}
+
+particlesJS("particles-js", particlesJSON)
+  </script>
   <!-- The Grid -->
   <div class="w3-row-padding">
   
@@ -167,12 +279,10 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
 <footer class="w3-container w3-indigo w3-center w3-margin-top">
   <p>Find me on social media.</p>
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
+ <a href="https://www.facebook.com/Manmohansingh786"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+ <a href="https://www.instagram.com/djmonei/"> <i class="fa fa-instagram w3-hover-opacity"></i></a>
+ <a href="https://twitter.com/djmonei" ><i class="fa fa-twitter w3-hover-opacity"></i></a>
+ <a href="https://www.linkedin.com/in/engineermanmohansingh/"> <i class="fa fa-linkedin w3-hover-opacity"></i></a>
   <p>Powered by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
 </footer>
 
