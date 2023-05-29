@@ -1,1 +1,33 @@
-/* ---- reset ---- */ body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } canvas{ display: block; vertical-align: bottom; } /* ---- particles.js container ---- */ #particles-js{ position:absolute; width: 100%; height: 100%; background-color: #000000; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } /* ---- stats.js ---- */ .count-particles{ background: #000022; position: absolute; top: 48px; left: 0; width: 80px; color: #13E8E9; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; } .js-count-particles{ font-size: 1.1em; } #stats, .count-particles{ -webkit-user-select: none; margin-top: 5px; margin-left: 5px; } #stats{ border-radius: 3px 3px 0 0; overflow: hidden; } .count-particles{ border-radius: 0 0 3px 3px; }
+/* ---- reset ---- */ 
+/* body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } canvas{ display: block; vertical-align: bottom; } ---- particles.js container ---- #particles-js{ position:absolute; width: 100%; height: 100%; background-color: #000000; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } ---- stats.js ---- .count-particles{ background: #000022; position: absolute; top: 48px; left: 0; width: 80px; color: #13E8E9; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; } .js-count-particles{ font-size: 1.1em; } #stats, .count-particles{ -webkit-user-select: none; margin-top: 5px; margin-left: 5px; } #stats{ border-radius: 3px 3px 0 0; overflow: hidden; } .count-particles{ border-radius: 0 0 3px 3px; } */
+ul{
+    display: inline;
+  }
+  .imgm1{
+    height: 3em;
+    margin-top: 1px;
+    animation: opacity2 2s linear infinite;
+  }
+  .imgm2{
+    height: 4em;
+     animation: opacity 2s linear infinite;
+  }
+  .imgm3{
+    height: 5em;
+     animation: opacity1 2s linear infinite;
+  }
+  @keyframes opacity{
+    0%{opacity: 0;}
+    50%{opacity: 70%;}
+    100%{opacity: 0;}
+  }
+  @keyframes opacity1{
+    0%{opacity: 0;}
+    50%{opacity: 90%;}
+    100%{opacity: 0;}
+  }
+  @keyframes opacity2{
+    0%{opacity: 0;}
+    50%{opacity: 100%;}
+    100%{opacity: 0;}
+  }
